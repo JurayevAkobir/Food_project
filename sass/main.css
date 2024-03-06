@@ -125,7 +125,6 @@ body {
 }
 
 .snacks {
-  position: relative;
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -141,7 +140,6 @@ body {
   text-transform: uppercase;
 }
 .snacks__swiper {
-  position: absolute !important;
   margin-left: 5px;
 }
 .snacks__swiper .snacks__slide .slide-box {

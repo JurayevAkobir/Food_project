@@ -23,33 +23,74 @@
 
 		<!-- header -->
 		<header class="header">
-			<div class="container d-flex align-items-center">
-				<a class="header__logo" href="#!">LOGOS</a>
-				<div class="header__contact d-flex align-items-center">
-					<div class="header__search-box position-relative">
-						<img class="header__location-icon position-absolute" src="./images/icons/location.svg"
-							alt="location icon">
-						<input class="header__search w-100" type="text" name="search"
-							placeholder="Введите адрес доставки">
-						<img class="header__search-icon position-absolute" src="./images/icons/search.svg"
-							alt="search icon">
+			<div class="container">
+				<div class="d-flex d-flex align-items-center justify-content-space-between">
+					<div class="menu_media">
+						<div class="menu_lines">
+							<div class="menu_line margin_b"></div>
+							<div class="menu_line margin_b"></div>
+							<div class="menu_line"></div>
+						</div>
+						<p>МЕНЮ</p>
 					</div>
+					<a class="header__logo" href="#!">LOGOS</a>
+					<div class="header__contact d-flex align-items-center">
+						<div class="header__search-box position-relative">
+							<img class="header__location-icon position-absolute" src="./images/icons/location.svg"
+								alt="location icon">
+							<input class="header__search w-100" type="text" name="search"
+								placeholder="Введите адрес доставки">
+							<img class="header__search-icon position-absolute" src="./images/icons/search.svg"
+								alt="search icon">
+						</div>
 
-					<div class="header__contact-box d-flex align-items-center">
-						<div class="phone-bg">
-							<img src="./images/icons/calling.svg" alt="calling icon">
+						<div class="header__contact-box d-flex align-items-center product__value">
+							<div class="phone-bg">
+								<img src="./images/icons/calling.svg" alt="calling icon">
+							</div>
+							<div class="header__contact-number">
+								<span>Контакты:</span>
+								<a class="tel position-relative" href="tel:+7(917)510-57-59">+7 (917) 510-57-59</a>
+								<div class="close d-none position-absolute">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M18 6L6 18" stroke="rgb(101, 144, 108)" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M6 6L18 18" stroke="rgb(101, 144, 108)" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+
+								</div>
+							</div>
 						</div>
-						<div class="header__contact-number">
-							<span>Контакты:</span>
-							<a href="tel:+7(917)510-57-59">+7 (917) 510-57-59</a>
-						</div>
+					</div>
+					<div class="header__cart-btn ms-auto">
+						<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<svg class="d-none" fill="none" height="24" viewBox="0 0 24 24" width="24"
+								xmlns="http://www.w3.org/2000/svg">
+								<g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+									<path
+										d="m2.75012 3.25002 2.08.36.963 11.47298c.077.937.86 1.656 1.8 1.653h10.90898c.897.002 1.658-.658 1.785-1.546l.949-6.55798c.106-.733-.403-1.413-1.135-1.519-.064-.009-14.93698-.014-14.93698-.014" />
+									<path d="m14.1251 10.7949h2.773" />
+									<g clip-rule="evenodd" fill="#000" fill-rule="evenodd">
+										<path
+											d="m7.15447 20.2026c.301 0 .544.244.544.544 0 .301-.243.545-.544.545s-.544-.244-.544-.545c0-.3.243-.544.544-.544z" />
+										<path
+											d="m18.4347 20.2026c.301 0 .545.244.545.544 0 .301-.244.545-.545.545s-.544-.244-.544-.545c0-.3.243-.544.544-.544z" />
+									</g>
+								</g>
+							</svg>
+							<p>Корзина</p>
+							<span class="product__value">4</span>
+						</button>
 					</div>
 				</div>
-				<div class="header__cart-btn ms-auto">
-					<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						Корзина
-						<span class="product__value">4</span>
-					</button>
+				<div class="header__search-box_media position-relative d-none">
+					<img class="header__location-icon position-absolute" src="./images/icons/location.svg"
+						alt="location icon">
+					<input class="header__search w-100" type="text" name="search" placeholder="Введите адрес доставки">
+					<img class="header__search-icon position-absolute" src="./images/icons/search.svg"
+						alt="search icon">
 				</div>
 			</div>
 		</header>
@@ -103,8 +144,8 @@
 				</div>
 			</section>
 
-			<!-- Snacks -->
-			<section class="snack_big-box border_bottom">
+			<!-- Snacks 1 -->
+			<section class="snacks_big-box border_bottom">
 				<div class="container">
 					<div class="snacks">
 						<div class="snacks__title">
@@ -117,7 +158,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -128,7 +169,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -138,7 +179,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 											<button class="number" type="button">3</button>
 										</div>
 										<div class="slide-box_texts">
@@ -150,11 +191,11 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<button class="btn btn-b">
-													<img class="m" src="images/icons/minus.svg" alt="">
+													<img class="m" src="./images/icons/minus.svg" alt="">
 												</button>
 												<h2>450 ₽</h2>
 												<button class="btn">
-													<img class="p" src="images/icons/plus.svg" alt="">
+													<img class="p" src="./images/icons/plus.svg" alt="">
 												</button>
 											</div>
 										</div>
@@ -163,7 +204,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -173,7 +214,7 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>7 900 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -182,7 +223,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -192,7 +233,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -202,7 +243,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -213,7 +254,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -223,7 +264,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 											<button class="number" type="button">3</button>
 										</div>
 										<div class="slide-box_texts">
@@ -235,11 +276,11 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<button class="btn btn-b">
-													<img class="m" src="images/icons/minus.svg" alt="">
+													<img class="m" src="./images/icons/minus.svg" alt="">
 												</button>
 												<h2>450 ₽</h2>
 												<button class="btn">
-													<img class="p" src="images/icons/plus.svg" alt="">
+													<img class="p" src="./images/icons/plus.svg" alt="">
 												</button>
 											</div>
 										</div>
@@ -248,7 +289,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -258,7 +299,7 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>7 900 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -267,7 +308,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -277,7 +318,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -291,8 +332,8 @@
 				</div>
 			</section>
 
-			<!-- Snacks 2 -->
-			<section class="snack_big-box border_bottom">
+			<!-- sancks 2 -->
+			<section class="snacks_big-box border_bottom">
 				<div class="container">
 					<div class="snacks">
 						<div class="snacks__title">
@@ -305,7 +346,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -315,7 +356,7 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>7 900 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -324,7 +365,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -334,7 +375,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -344,7 +385,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -355,7 +396,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -365,7 +406,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -376,7 +417,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>1 620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -385,7 +426,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -395,7 +436,7 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>7 900 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -404,7 +445,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -414,7 +455,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -424,7 +465,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -435,7 +476,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -445,7 +486,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -456,7 +497,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>1 620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -469,8 +510,8 @@
 				</div>
 			</section>
 
-			<!-- Snacks 3 -->
-			<section class="snack_big-box border_bottom">
+			<!-- snacks 3 -->
+			<section class="snacks_big-box border_bottom">
 				<div class="container">
 					<div class="snacks">
 						<div class="snacks__title">
@@ -483,7 +524,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -494,7 +535,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -504,7 +545,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -515,11 +556,11 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<button class="btn btn-b">
-													<img class="m" src="images/icons/minus.svg" alt="">
+													<img class="m" src="./images/icons/minus.svg" alt="">
 												</button>
 												<h2>450 ₽</h2>
 												<button class="btn">
-													<img class="p" src="images/icons/plus.svg" alt="">
+													<img class="p" src="./images/icons/plus.svg" alt="">
 												</button>
 											</div>
 										</div>
@@ -528,7 +569,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 											<button class="number" type="button">2</button>
 										</div>
 										<div class="slide-box_texts">
@@ -539,11 +580,11 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<button class="btn btn-b">
-													<img class="m" src="images/icons/minus.svg" alt="">
+													<img class="m" src="./images/icons/minus.svg" alt="">
 												</button>
 												<h2>450 ₽</h2>
 												<button class="btn">
-													<img class="p" src="images/icons/plus.svg" alt="">
+													<img class="p" src="./images/icons/plus.svg" alt="">
 												</button>
 											</div>
 										</div>
@@ -552,7 +593,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -562,7 +603,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -572,7 +613,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img1.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img1.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -583,7 +624,7 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>620 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -593,7 +634,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img2.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img2.png" alt="snack-img1" width="100%">
 											<button class="number" type="button">3</button>
 										</div>
 										<div class="slide-box_texts">
@@ -605,11 +646,11 @@
 											</p>
 											<div class="d-flex align-items-center btn-box">
 												<button class="btn btn-b">
-													<img class="m" src="images/icons/minus.svg" alt="">
+													<img class="m" src="./images/icons/minus.svg" alt="">
 												</button>
 												<h2>450 ₽</h2>
 												<button class="btn">
-													<img class="p" src="images/icons/plus.svg" alt="">
+													<img class="p" src="./images/icons/plus.svg" alt="">
 												</button>
 											</div>
 										</div>
@@ -618,7 +659,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img3.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img3.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -628,7 +669,7 @@
 											<p class="m-b">Фаршированный яблоками</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>7 900 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -637,7 +678,7 @@
 								<div class="swiper-slide snacks__slide">
 									<div class="slide-box">
 										<div class="snack-img">
-											<img src="images/snack-img4.png" alt="snack-img1" width="100%">
+											<img src="./images/snack-img4.png" alt="snack-img1" width="100%">
 										</div>
 										<div class="slide-box_texts">
 											<div class="d-flex align-items-center t-d">
@@ -647,7 +688,7 @@
 											<p class="m-b">Фаршированная рисом, курагой и айвой</p>
 											<div class="d-flex align-items-center btn-box">
 												<h2>3 230 ₽</h2>
-												<button class="btn">В корзину <img src="images/icons/Buy.svg"
+												<button class="btn">В корзину <img src="./images/icons/Buy.svg"
 														alt=""></button>
 											</div>
 										</div>
@@ -658,6 +699,7 @@
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
+
 				</div>
 			</section>
 
@@ -666,6 +708,7 @@
 				<div class="container">
 					<div class="our-cafe__big-box">
 						<div class="boxes d-flex">
+
 							<div class="texts-box">
 								<h1>НАШЕ КАФЕ</h1>
 								<p>Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш
@@ -799,21 +842,21 @@
 				<div class="container">
 					<div class="connections__box">
 						<div class="title">
-							<a href="contact.html">КОНТАКТЫ</a>
+							<a href="./contact.html">КОНТАКТЫ</a>
 						</div>
 						<div classgit="line-box">
-							<img src="images/chzq.png" alt="chiziq">
+							<img src="./images/chzq.png" alt="chiziq">
 						</div>
 						<div class="small-boxes">
 							<div class="small-box d-flex">
-								<img src="images/icons/location-2.svg" alt="location-2">
+								<img src="./images/icons/location-2.svg" alt="location-2">
 								<div class="small-box-t">
 									<h5>Наш адрес:</h5>
 									<p>МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10</p>
 								</div>
 							</div>
 							<div class="small-box d-flex">
-								<img src="images/icons/message.svg" alt="message">
+								<img src="./images/icons/message.svg" alt="message">
 								<div class="small-box-t">
 									<h5>Наша почта:</h5>
 									<p>auto.wash@gmail.com</p>
@@ -821,7 +864,7 @@
 							</div>
 						</div>
 						<div class="line-box">
-							<img src="images/chzq.png" alt="chiziq">
+							<img src="./images/chzq.png" alt="chiziq">
 						</div>
 						<div class="phone-box d-flex align-items-center">
 							<button class="btn">ЗАБРОНИРОВАТЬ СТОЛ</button>
@@ -833,10 +876,10 @@
 						<div class="social-networks d-flex align-items-center">
 							<h4>Мы в соц сетях:</h4>
 							<div class="networks d-flex align-items-center">
-								<img src="images/icons/facebook.svg" alt="facebook">
-								<img src="images/icons/vkontakte-logo.svg" alt="vkontakte-logo">
-								<img src="images/icons/youtube.svg" alt="youtube">
-								<img src="images/icons/instagram.svg" alt="instagram">
+								<img src="./images/icons/facebook.svg" alt="facebook">
+								<img src="./images/icons/vkontakte-logo.svg" alt="vkontakte-logo">
+								<img src="./images/icons/youtube.svg" alt="youtube">
+								<img src="./images/icons/instagram.svg" alt="instagram">
 							</div>
 						</div>
 					</div>
@@ -848,7 +891,6 @@
 					</div>
 				</div>
 			</section>
-
 		</main>
 
 		<!-- footer -->
@@ -857,7 +899,7 @@
 				<div class="footer__boxes d-flex">
 					<div class="top-btn">
 						<a href="#">
-							<img src="images/icons/top.svg" alt="top">
+							<img src="./images/icons/top.svg" alt="top">
 						</a>
 					</div>
 					<div class="text-one-box">
@@ -904,7 +946,7 @@
 						</svg>
 					</button>
 					<div class="logo-text">
-						<img class="d-flex" src="images/icons/cart.svg" alt="cart" width="76px" height="89px">
+						<img class="d-flex" src="./images/icons/cart.svg" alt="cart" width="76px" height="89px">
 						<h2>КОРЗИНА ПУСТАЯ</h2>
 					</div>
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Посмотреть меню</button>
