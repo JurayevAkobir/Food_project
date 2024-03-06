@@ -369,8 +369,8 @@ body {
   }
   .header__contact-box .phone-bg {
     position: absolute;
-    top: 46px;
-    left: 78px;
+    top: 20%;
+    left: 22%;
   }
   .header__contact-box .header__contact-number {
     position: absolute;
