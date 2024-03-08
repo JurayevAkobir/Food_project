@@ -152,6 +152,7 @@
 
 .connections {
     .map-box {
+        left: 0;
         top: -250px;
         z-index: -1;
     }
@@ -311,7 +312,7 @@
     .menu {
         &__navbar {
             ul {
-                overflow-x: scroll;
+                overflow-x: scroll !important;
             }
         }
     }
