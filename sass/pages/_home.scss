@@ -40,10 +40,12 @@
 
     &__navbar {
         ul {
-            padding-left: 80px;
-            margin: 0;
+            justify-content: space-between;
+            padding-left: 0px !important;
+            margin: 0 !important;
 
             li {
+                margin: 0 !important;
                 padding: 29px 0px;
                 list-style: none;
 
@@ -62,7 +64,6 @@
                 }
 
                 a {
-                    margin: 0 13px;
                     color: variables.$white-gray;
                     font-size: 18px;
                 }

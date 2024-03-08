@@ -1,6 +1,47 @@
 @use "../abstracts/variables";
 
 
-.delivery {
-    
+.wrapper {
+    .main {
+
+        .delivery {
+
+            .d-flex {
+                .accordion {
+                    margin-right: 20px;
+
+                    .accordion-item {
+                        width: 618px;
+                        height: 68px;
+                        margin-bottom: 10px;
+                        border-radius: 10px;
+                        background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.848%, rgb(114, 164, 121) 95.899%) !important;
+
+
+
+                        .accordion-header {
+
+                            .accordion-button {
+
+                                border-radius: 10px;
+                                background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.848%, rgb(114, 164, 121) 95.899%) !important;
+
+                            }
+
+                            .accordion-button:focus {
+                                display: none;
+                            }
+                        }
+
+                        .accordion-header:focus {
+                            display: none;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+    }
 }
